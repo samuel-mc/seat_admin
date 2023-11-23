@@ -43,6 +43,10 @@ html {
     font-size: var(--text-xl);
 }
 
+.text--orange {
+    color: var(--bg-orange);
+}
+
 .bg--orange {
     background-color: var(--bg-orange);
 }
@@ -75,6 +79,19 @@ html {
 .a--white:hover {
     color: #ffffff98;
     text-decoration: none;
+    cursor: pointer;
+}
+.border--grey{
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+}
+
+.btn--orange {
+    background-color: var(--bg-orange);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: var(--text-sm);
     cursor: pointer;
 }
 
@@ -110,6 +127,12 @@ html {
     grid-gap: 1rem;
 }
 
+.grid--3cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
 .grid--4cols {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -121,6 +144,9 @@ html {
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1rem;
 }
+.gap--12{
+    gap: 12px;
+}
 
 textarea {
     resize: none;
@@ -130,7 +156,9 @@ textarea {
     .grid--4cols {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    .grid--3cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .grid--5cols {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -139,6 +167,9 @@ textarea {
 @media (max-width: 768px) {
 
     .grid--2cols {
+        grid-template-columns: 1fr;
+    }
+    .grid--3cols {
         grid-template-columns: 1fr;
     }
 

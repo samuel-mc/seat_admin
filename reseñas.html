@@ -63,7 +63,7 @@
             <!-- Inicia la tabla de contenido -->
             <main class="bg-white p-4 rounded-lg">
                 <div class="d-flex justify-content-between">
-                    <h3>Promociones</h3>
+                    <h3>Reseña</h3>
                     <div class="d-flex align-items-center">
                         <select class="searchItem">
                             <option>Ver por</option>
@@ -76,26 +76,20 @@
                     <table id="example" class="display" style="width:100%">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Fecha</th>
-                                <th>Expiración</th>
-                                <th>Imágen</th>
+                                <th>Nombre</th>
+                                <th>Imagen</th>
                                 <th>Descripción</th>
-                                <th>Industria</th>
-                                <th>Tipo de promoción</th>
+                                <th>Empresa</th>
                                 <th>Opciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <td>132544</td>
-                                <td>27/09/23</td>
-                                <td>27/09/23</td>
+                                <td>Lorem ipsum</td>
                                 <td>
                                     <img src="./public/img/chair.png" alt="">
                                 </td>
-                                <td>Lorem ipsum</td>
-                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quidem rerum cum accusantium veritatis natus dolor</td>
                                 <td>Lorem ipsum</td>
                                 <td>
                                     <button class="btn btn-sm btn-link text-dark">
@@ -107,14 +101,11 @@
                                 </td>
                             </tr>
                             <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <td>132544</td>
-                                <td>27/09/23</td>
-                                <td>27/09/23</td>
+                                <td>Lorem ipsum</td>
                                 <td>
                                     <img src="./public/img/chair.png" alt="">
                                 </td>
-                                <td>Lorem ipsum</td>
-                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quidem rerum cum accusantium veritatis natus dolor</td>
                                 <td>Lorem ipsum</td>
                                 <td>
                                     <button class="btn btn-sm btn-link text-dark">
@@ -126,14 +117,11 @@
                                 </td>
                             </tr>
                             <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <td>132544</td>
-                                <td>27/09/23</td>
-                                <td>27/09/23</td>
+                                <td>Lorem ipsum</td>
                                 <td>
                                     <img src="./public/img/chair.png" alt="">
                                 </td>
-                                <td>Lorem ipsum</td>
-                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quidem rerum cum accusantium veritatis natus dolor</td>
                                 <td>Lorem ipsum</td>
                                 <td>
                                     <button class="btn btn-sm btn-link text-dark">
@@ -161,7 +149,7 @@
                         </div>
                         <div class="modal-body p-2 p-lg-5">
                             <div class="d-flex align-items-center my-4">
-                                <h2 class="text--md mr-4">Crear promoción</h2>
+                                <h2 class="text--md mr-4">Crear reseña</h2>
                                 <div class="dropdown">
                                     <button class="btn btn--orange-text dropdown-toggle" type="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -175,30 +163,18 @@
                             <form action="">
                                 <div class="grid--5cols">
                                     <div class="input--item">
-                                        <h3 class="text-secondary text--xs">Fecha</h3>
-                                        <input type ="text" class="input--grey" placeholder="27/09/23">
+                                        <h3 class="text-secondary text--xs">Nombre</h3>
+                                        <input type ="text" class="input--grey" placeholder="Nombre">
                                     </div>
                                     <div class="input--item">
-                                        <h3 class="text-secondary text--xs">Expiración</h3>
-                                        <input type ="text" class="input--grey" placeholder="Expiración">
-                                    </div>
-                                    <div class="input--item">
-                                        <h3 class="text-secondary text--xs">Industria</h3>
-                                        <input type ="text" class="input--grey" placeholder="Industria">
-                                    </div>
-                                    <div class="input--item">
-                                        <h3 class="text-secondary text--xs">Tipo de promoción</h3>
-                                        <input type ="text" class="input--grey" placeholder="Tipo de promoción"/>
-                                    </div>
-                                    <div class="input--item">
-                                        <h3 class="text-secondary text--xs">Codigo promocional</h3>
-                                        <input type ="text" class="input--grey" placeholder="Codigo promocional">
+                                        <h3 class="text-secondary text--xs">Empresa</h3>
+                                        <input type ="text" class="input--grey" placeholder="Empresa">
                                     </div>
                                 </div>
                                 <div class="input--item">
-                                    <textarea class="input--grey" id="" cols="20" rows="10" placeholder="Escribe aquí..."></textarea>
+                                    <textarea class="input--grey" id="" cols="15" rows="8" placeholder="Escribe aquí..."></textarea>
                                 </div>
-                                <div class="grid--3cols">
+                                <div class="grid--3cols py-2">
                                     <div id="drop-area" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)" onclick="clickFileInput()">
                                         <img src="./public/img/add.png" alt="">
                                         <h4 class="font-weight-bold py-2">Arrastra tus imagenes aquí</h4>
