@@ -61,6 +61,37 @@
     transition: all 0.3s ease-in-out;
 }
 
+/* Estilo para el contenedor del paginador */
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: 20px; /* Ajusta la posición vertical según tus necesidades */
+    
+}
+
+/* Estilo para los botones del paginador */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: none !important;
+    background-color: var(--light-grey) !important;
+    color: var(--bg-orange) !important; 
+    cursor: pointer ;
+}
+
+/* Estilo para los botones del paginador */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: var(--bg-orange) !important;
+    color: var(--bg-orange) !important; 
+    cursor: pointer ;
+}
+/* Estilo para el botón activo */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: var(--bg-orange) !important;
+    color: white !important;
+    border: 1px solid var(--bg-orange) !important;
+    /* Añade un color específico para anular el 'color: inherit' de DataTables */
+    color: #fff !important;
+}
+
 @media (max-width: 768px) {
     #dashboard {
         display: block;
