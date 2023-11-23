@@ -13,6 +13,7 @@ html {
     --bg-orange: #F94616;
     --white: #fff;
     --light-grey: #F9FBFD;
+    --green-light: #d4ffdd;
 
     --text-xs: 12px;
     --text-sm: 16px;
@@ -52,6 +53,10 @@ html {
 
 .bg--lightGrey {
     background-color: var(--light-grey);
+}
+
+.bg--greenLight {
+    background-color: var(--green-light);
 }
 
 .minh--100vh {
@@ -105,14 +110,28 @@ html {
     grid-gap: 1rem;
 }
 
+.grid--5cols {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+}
+
 @media (max-width: 992px) {
     .grid--4cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid--5cols {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .grid--4cols {
+        grid-template-columns: 1fr;
+    }
+
+    .grid--5cols {
         grid-template-columns: 1fr;
     }
 }
