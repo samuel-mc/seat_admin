@@ -104,6 +104,12 @@ html {
     color: #f9461698;
 }
 
+.grid--2cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
 .grid--4cols {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -114,6 +120,10 @@ html {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1rem;
+}
+
+textarea {
+    resize: none;
 }
 
 @media (max-width: 992px) {
@@ -127,6 +137,11 @@ html {
 }
 
 @media (max-width: 768px) {
+
+    .grid--2cols {
+        grid-template-columns: 1fr;
+    }
+
     .grid--4cols {
         grid-template-columns: 1fr;
     }

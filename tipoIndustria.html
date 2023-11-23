@@ -63,7 +63,7 @@
             <!-- Inicia la tabla de contenido -->
             <main class="bg-white p-4 rounded-lg">
                 <div class="d-flex justify-content-between">
-                    <h3>Todos los clientes</h3>
+                    <h3>Catálogo de tipo de colores</h3>
                     <div class="d-flex align-items-center">
                         <select class="searchItem">
                             <option>Ver por</option>
@@ -73,7 +73,7 @@
                         <button class="btn btn--orange" style="min-width: fit-content; height: fit-content;"
                             type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="fa-solid fa-plus"></i>
-                            Crear cliente
+                            Agregar tipo de color
                         </button>
                     </div>
                 </div>
@@ -83,22 +83,40 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Nombre</th>
-                                <th>Email</th>
-                                <th>País</th>
-                                <th>Phone Number</th>
-                                <th>CP</th>
-                                <th>Dirección</th>
+                                <th>Descripción</th>
                                 <th>Opciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>132544</td>
-                                <td>Jane Cooper</td>
-                                <td>jane@microsoft.com</td>
-                                <td>United States</td>
-                                <td>(225) 555-0118</td>
-                                <td>14210</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>
+                                    <button class="btn btn-sm btn-link text-dark">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-link text-dark">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>132544</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>
+                                    <button class="btn btn-sm btn-link text-dark">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-link text-dark">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>132544</td>
+                                <td>Lorem ipsum</td>
                                 <td>Lorem ipsum</td>
                                 <td>
                                     <button class="btn btn-sm btn-link text-dark">
@@ -126,7 +144,7 @@
                         </div>
                         <div class="modal-body p-2 p-lg-5">
                             <div class="d-flex align-items-center my-4">
-                                <h2 class="text--md mr-4">Crear cliente</h2>
+                                <h2 class="text--md mr-4">Crear Catálogo de tipo de colores</h2>
                                 <div class="dropdown">
                                     <button class="btn btn--orange-text dropdown-toggle" type="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -138,67 +156,24 @@
                                 </div>
                             </div>
                             <form action="">
-                                <div class="grid--4cols">
+                                <div class="grid--2cols">
                                     <div class="input--item">
-                                        <label for="nombre" class="text-secondary">Nombre completo*</label>
+                                        <label for="id" class="text-secondary">ID</label>
+                                        <input type="text" class="input--grey" placeholder="ID" id="id">
+                                    </div>
+                                    <div class="input--item">
+                                        <label for="nombre" class="text-secondary">Nombre</label>
                                         <input type="text" class="input--grey" placeholder="Nombre" id="nombre">
                                     </div>
-                                    <div class="input--item">
-                                        <label for="correo" class="text-secondary">Correo electronico*</label>
-                                        <input type="text" class="input--grey" placeholder="correo@mail.com"
-                                            id="correo">
-                                    </div>
-                                    <div class="input--item">
-                                        <label for="direccion" class="text-secondary">Dirección*</label>
-                                        <input type="text" class="input--grey" placeholder="Dirección" id="direccion">
-                                    </div>
-                                    <div class="input--item">
-                                        <label for="pais" class="text-secondary">País*</label>
-                                        <input type="text" class="input--grey" placeholder="País" id="pais">
-                                    </div>
                                 </div>
-                                <div class="grid--4cols">
-                                    <div class="input--item">
-                                        <label for="estado" class="text-secondary">Estado*</label>
-                                        <input type="text" class="input--grey" placeholder="Estado" id="estado">
-                                    </div>
-                                    <div class="input--item">
-                                        <label for="ciudad" class="text-secondary">Ciudad*</label>
-                                        <input type="text" class="input--grey" placeholder="Ciudad" id="ciudad">
-                                    </div>
-                                    <div class="input--item">
-                                        <label for="cp" class="text-secondary">CP*</label>
-                                        <input type="text" class="input--grey" placeholder="Código postal" id="cp">
-                                    </div>
-                                    <div class="input--item">
-                                        <label for="compania" class="text-secondary">Compañía*</label>
-                                        <input type="text" class="input--grey" placeholder="Nombre de la compañía"
-                                            id="compania">
-                                    </div>
-                                </div>
-                                <div class="grid--4cols">
-                                    <div class="input--item">
-                                        <label for="telefono" class="text-secondary">Número teléfonico*</label>
-                                        <input type="text" class="input--grey" placeholder="Número teléfonico"
-                                            id="telefono">
-                                    </div>
-                                    <div class="input--item">
-                                        <label for="tipo" class="text-secondary">Tipo de negocio*</label>
-                                        <input type="text" class="input--grey" placeholder="Tipo de negocio" id="tipo">
-                                    </div>
-                                    <div class="input--item">
-                                        <label for="contrasena" class="text-secondary">Contraseña*</label>
-                                        <input type="text" class="input--grey" placeholder="Contraseña" id="contrasena">
-                                    </div>
-                                    <div class="input--item">
-                                        <label for="confirmar" class="text-secondary">Confirmar contraseña*</label>
-                                        <input type="text" class="input--grey" placeholder="Confirmar contraseña"
-                                            id="confirmar">
-                                    </div>
+                                <div class="input--item">
+                                    <label for="descripcion" class="text-secondary">Descripción</label>
+                                    <textarea class="input--grey" placeholder="Escribe aquí..." id="descripcion" rows="4"></textarea>
                                 </div>
                                 <div class="d-flex flex-column align-items-center p-4">
-                                    <button type="button" class="btn btn--orange w--fit px-5">Crear cliente</button>
-                                    <button type="button" class="btn btn--orange-text w--fit px-5" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn--orange w--fit px-5">Guardar</button>
+                                    <button type="button" class="btn btn--orange-text w--fit px-5"
+                                        data-bs-dismiss="modal">Cancelar</button>
                                 </div>
                             </form>
                         </div>
