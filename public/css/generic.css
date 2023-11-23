@@ -58,6 +58,10 @@ html {
     min-height: 100vh;
 }
 
+.w--fit {
+    width: fit-content;
+}
+
 .a--white {
     color: var(--white);
     text-decoration: none;
@@ -73,7 +77,6 @@ html {
     background-color: var(--bg-orange);
     color: var(--white);
     border: none;
-    padding: 4px 8px;
     border-radius: 4px;
     font-size: var(--text-sm);
     cursor: pointer;
@@ -81,4 +84,35 @@ html {
 
 .btn--orange:hover {
     background-color: #f9461698;
+    color: var(--white);
+}
+
+.btn--orange-text {
+    color: var(--bg-orange);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: var(--text-sm);
+    cursor: pointer;
+}
+
+.btn--orange-text:hover {
+    color: #f9461698;
+}
+
+.grid--4cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+@media (max-width: 992px) {
+    .grid--4cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid--4cols {
+        grid-template-columns: 1fr;
+    }
 }

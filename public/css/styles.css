@@ -36,6 +36,31 @@
     margin: 12px;
 }
 
+.input--item {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+}
+
+.input--item label {
+    font-size: var(--text-xs);
+    margin-bottom: 4px;
+}
+
+.input--grey {
+    border: none;
+    background-color: var(--light-grey);
+    border-radius: 4px;
+    padding: 8px 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+.input--grey:focus {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease-in-out;
+}
+
 @media (max-width: 768px) {
     #dashboard {
         display: block;
@@ -45,4 +70,8 @@
         display: none;
     }
     
+
+    .input--item {
+        margin: 4px 0;
+    }
 }
